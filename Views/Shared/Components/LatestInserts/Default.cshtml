@@ -1,0 +1,18 @@
+﻿@model IEnumerable<OrganizeYourGames.Models.Insert>
+<h1 class="section-title text-left">Latest inserts added</h1>
+<div class="grid-container">
+    @foreach (var v in Model)
+    {
+        <div class="card hover12">  
+            <figure>
+                <img src="/images/@(v.Image).png" alt="@v.Game" style="width:100%">
+            </figure>
+            <div class="card-body">
+                <h5 class="card-title">@v.Game</h5>
+                <p class="card-text">Organizer for @v.Game from @v.Store</p>
+                <p><b>@v.Price EUR</b></p>                
+            </div>  
+        </div>
+    }
+</div>
+
