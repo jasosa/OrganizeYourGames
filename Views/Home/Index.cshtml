@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OrganizeYourGames.Models.Game>
+﻿@model IEnumerable<OrganizeYourGames.ViewModels.HomePageItem>
 @addTagHelper *, OrganizeYourGames
 @{
     ViewData["Title"] = "Home Page";
@@ -46,26 +46,7 @@
 }
 </style>
 
-<div class="text-center">
-    <h1 class="section-title text-left">Latest games added</h1>
-    <div class="grid-container">        
-        @foreach (var v in Model)
-        {
-        <div class="card">
-            <div class="hovercontainer">
-                <img class="image" src="/images/@(v.ImagePath).png" alt="@v.Name" style="width:100%">
-                <div class="middle">
-                    <a href="#">
-                        <div class="text">Show</div>
-                    </a>
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">@v.Name</h5>
-                <p class="card-text">Inserts/Organizers: @v.NumberOfOrganizers</p>
-            </div>   
-        </div>
-            }
-        </div>
+<div class="text-center">   
+    <vc:latest-games></vc:latest-games>
     <vc:latest-inserts></vc:latest-inserts>
 </div>

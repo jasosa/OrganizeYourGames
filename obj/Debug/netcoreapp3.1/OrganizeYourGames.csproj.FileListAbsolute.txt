@@ -136,3 +136,5 @@ C:\Users\juanan\source\repos\OrganizeYourGames\bin\Debug\netcoreapp3.1\runtimes\
 C:\Users\juanan\source\repos\OrganizeYourGames\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\juanan\source\repos\OrganizeYourGames\obj\Debug\netcoreapp3.1\OrganizeYourGames.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\juanan\source\repos\OrganizeYourGames\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\LatestInserts\Default.cshtml.g.cs
+C:\Users\juanan\source\repos\OrganizeYourGames\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_HomePageItem.cshtml.g.cs
+C:\Users\juanan\source\repos\OrganizeYourGames\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\LatestGames\Default.cshtml.g.cs

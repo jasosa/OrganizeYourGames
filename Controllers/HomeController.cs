@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using OrganizeYourGames.Models;
+using OrganizeYourGames.ViewModels;
 
 namespace OrganizeYourGames.Controllers
 {
@@ -19,8 +20,8 @@ namespace OrganizeYourGames.Controllers
         }
 
         public IActionResult Index(GamesDataContext data)
-        {
-            return View(data.GetLatestGames());
+        {            
+            return View();
         }
     }
 }
