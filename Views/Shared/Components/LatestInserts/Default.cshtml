@@ -3,15 +3,21 @@
 <div class="grid-container">
     @foreach (var v in Model)
     {
-        <div class="card hover12">  
-            <figure>
-                <img src="/images/@(v.Image).png" alt="@v.Game" style="width:100%">
-            </figure>
+        <div class="card">  
+            <div class="hovercontainer">                
+                    <img class="image" src="/images/@(v.Image).png" alt="@v.Game" style="width:100%">
+                    <div class="middle">
+                        <a href="#">
+                            <div class="text">Show</div>
+                        </a>
+                    </div>
+
+            </div>
             <div class="card-body">
-                <h5 class="card-title">@v.Game</h5>
-                <p class="card-text">Organizer for @v.Game from @v.Store</p>
-                <p><b>@v.Price EUR</b></p>                
-            </div>  
+                    <h5 class="card-title">@v.Game</h5>
+                    <p class="card-text">Organizer for @v.Game from @v.Store</p>
+                    <p><b>@v.Price EUR</b></p>
+            </div>
         </div>
     }
 </div>
