@@ -23,7 +23,7 @@ namespace OrganizeYourGames.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            var latestGamesInHomePage = data.GetLatestGames().Select(g => new HomePageItem
+            var latestGamesInHomePage = data.Games.Select(g => new HomePageItem
             {
                 Image = g.ImagePath,
                 Description = string.Format("Inserts/Organizers: {0}", g.NumberOfOrganizers),

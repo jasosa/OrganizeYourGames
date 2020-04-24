@@ -19,7 +19,7 @@ namespace OrganizeYourGames.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index(GamesDataContext data)
+        public IActionResult Index()
         {            
             return View();
         }

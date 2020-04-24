@@ -25,6 +25,7 @@
       "OrganizeYourGames/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Design": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0-preview1.19506.2",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.0-preview1.19506.2",
           "Microsoft.Extensions.Logging.Debug": "3.1.0-preview1.19506.1",
@@ -603,7 +604,7 @@
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Workspaces.dll": {}
         }
       },
-      "Microsoft.CSharp/4.7.0-preview1.19504.10": {},
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Data.SqlClient/1.0.19249.1": {
         "dependencies": {
           "Microsoft.Identity.Client": "3.0.8",
@@ -673,36 +674,36 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/3.1.3": {},
-      "Microsoft.EntityFrameworkCore.Design/3.1.0-preview1.19506.2": {
+      "Microsoft.EntityFrameworkCore.Design/3.1.3": {
         "dependencies": {
-          "Microsoft.CSharp": "4.7.0-preview1.19504.10",
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.0-preview1.19506.2"
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.3"
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.19.50602"
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12804"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/3.1.0-preview1.19506.2": {
+      "Microsoft.EntityFrameworkCore.Relational/3.1.3": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.3"
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.19.50602"
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12804"
           }
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.SqlServer/3.1.0-preview1.19506.2": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "1.0.19249.1",
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.0-preview1.19506.2"
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.3"
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -716,7 +717,7 @@
       },
       "Microsoft.EntityFrameworkCore.Tools/3.1.0-preview1.19506.2": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "3.1.0-preview1.19506.2"
+          "Microsoft.EntityFrameworkCore.Design": "3.1.3"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/3.1.3": {
@@ -878,7 +879,7 @@
       },
       "Microsoft.Identity.Client/3.0.8": {
         "dependencies": {
-          "Microsoft.CSharp": "4.7.0-preview1.19504.10",
+          "Microsoft.CSharp": "4.7.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
           "System.Net.NameResolution": "4.3.0",
           "System.Runtime.Serialization.Formatters": "4.3.0",
@@ -3836,12 +3837,12 @@
       "path": "microsoft.codeanalysis.workspaces.common/3.4.0-beta2-final",
       "hashPath": "microsoft.codeanalysis.workspaces.common.3.4.0-beta2-final.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.7.0-preview1.19504.10": {
+    "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/v+3zrT42mvIcQkoNo2PfMhGo0dQ4q2OnW4lE99HU/m2idK5rDnVay77RTS0E1xcWAoqFjALy7y7X2oiSscpLw==",
-      "path": "microsoft.csharp/4.7.0-preview1.19504.10",
-      "hashPath": "microsoft.csharp.4.7.0-preview1.19504.10.nupkg.sha512"
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Data.SqlClient/1.0.19249.1": {
       "type": "package",
@@ -3871,19 +3872,19 @@
       "path": "microsoft.entityframeworkcore.analyzers/3.1.3",
       "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.3.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/3.1.0-preview1.19506.2": {
+    "Microsoft.EntityFrameworkCore.Design/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rriRHUrRoGzVsYhmBVqCpxZjvn6BsayxDPGeOdM5JsOR9mS99JmCIPp4oUKHx/hfcTnpTh8BFbn15RQs+gxUZw==",
-      "path": "microsoft.entityframeworkcore.design/3.1.0-preview1.19506.2",
-      "hashPath": "microsoft.entityframeworkcore.design.3.1.0-preview1.19506.2.nupkg.sha512"
+      "sha512": "sha512-T0d+lFCf0UUHkl9trdUosjyqa4/yMlVRwPOTXJAKZxkkJ2Mgl98IK+e4dsVyYdZaVukVnT7xhh5j7Qs21rJ45g==",
+      "path": "microsoft.entityframeworkcore.design/3.1.3",
+      "hashPath": "microsoft.entityframeworkcore.design.3.1.3.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/3.1.0-preview1.19506.2": {
+    "Microsoft.EntityFrameworkCore.Relational/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lO9VQcexxiIVLuUbiacV6irKcrraJkr9b+qbXAL3Tz0CzKyOqRe1Kf21WjhlJ2RhZoV9CkdxAb6vwbiQ4r8WEw==",
-      "path": "microsoft.entityframeworkcore.relational/3.1.0-preview1.19506.2",
-      "hashPath": "microsoft.entityframeworkcore.relational.3.1.0-preview1.19506.2.nupkg.sha512"
+      "sha512": "sha512-uL8nPKSGtWkqi613tGj2fbFGskm4k6KKE7rRcWFEQx0tbrOyMiowL4gErFLa0izmoSE1uWhEdqxq1iE1C3yCmw==",
+      "path": "microsoft.entityframeworkcore.relational/3.1.3",
+      "hashPath": "microsoft.entityframeworkcore.relational.3.1.3.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.SqlServer/3.1.0-preview1.19506.2": {
       "type": "package",

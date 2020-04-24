@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -33,10 +34,16 @@ namespace OrganizeYourGames
             {
                 DeveloperExceptions = configuration.GetValue<bool>("FeatureToggles:DeveloperExceptions")
             });
+
+            services.AddDbContext<GamesDataContext>(options =>
+            {
+                var connectionString = configuration.GetConnectionString("GamesDataContext");
+                options.UseSqlServer(connectionString);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, FeatureToggles features)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, FeatureToggles features, GamesDataContext db)
         {
             app.UseExceptionHandler("/error.html");
 
@@ -44,6 +51,8 @@ namespace OrganizeYourGames
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            //db.Database.EnsureCreated();
 
             app.UseRouting();
 
