@@ -15,6 +15,8 @@ namespace OrganizeYourGames.Models
      
         public DbSet<Game> Games { get; set; }
 
+        public DbSet<Insert> Inserts { get; set; }
+
         //public IEnumerable<Game> GetLatestGames()
         //{
         //    Game[] games = new Game[]

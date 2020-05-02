@@ -18,7 +18,7 @@ namespace OrganizeYourGames.ViewComponents
         
         public LatestGamesViewComponent(GamesDataContext data)
         {
-            this.data = data;
+            this.data = data;            
         }
 
         public IViewComponentResult Invoke()
@@ -29,7 +29,7 @@ namespace OrganizeYourGames.ViewComponents
                 Description = string.Format("Inserts/Organizers: {0}", g.NumberOfOrganizers),
                 Title = g.Name
             }).ToList();
-
+            
             return View(latestGamesInHomePage);
 
         }

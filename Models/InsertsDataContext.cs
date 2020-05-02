@@ -13,6 +13,7 @@ namespace OrganizeYourGames.Models
             Insert[] inserts = new Insert[]
             {
              new Insert{
+                 Key = "51st_broken_token",
                  Game="51st State",
                  Price=36.99,
                  Store="The Broken Token",
@@ -20,6 +21,7 @@ namespace OrganizeYourGames.Models
                  Image="51stState_BrokenToken"
                 },
              new Insert{
+                 Key = "andor_game_doctors",
                  Game="Legends of Andor",
                  Price=21.17,
                  Store="The Game Doctors",
