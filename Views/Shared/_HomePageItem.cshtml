@@ -6,7 +6,7 @@
             <div class="hovercontainer">
                 <img class="image" src="/images/@(v.Image).png" alt="@v.Title" style="width:100%">
                 <div class="middle">
-                    <a href="#">
+                    <a href="@Url.Action("Inserts", "Games", new { name = v.Title })">
                         <div class="text">Show</div>
                     </a>
                 </div>
