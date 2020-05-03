@@ -1,0 +1,21 @@
+﻿@model IEnumerable<OrganizeYourGames.Models.Game>
+<div class="grid-container">
+    @foreach (var v in Model)
+    {
+        <div class="card">
+            <div class="hovercontainer">
+                <img class="image" src="/images/@(v.ImagePath).png" alt="@v.Name" style="width:100%;">
+                <div class="middle">                    
+                        <a href="@Url.Action("Inserts", "Games", new { name = v.Name })">
+                            <div class="text">Show</div>
+                        </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@v.Name</h5>
+                <p class="card-text">Number of inserts/organizers: @v.NumberOfOrganizers</p>                
+            </div>
+        </div>
+    }
+</div>
+

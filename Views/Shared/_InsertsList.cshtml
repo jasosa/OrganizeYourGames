@@ -1,0 +1,23 @@
+﻿@model IEnumerable<OrganizeYourGames.Models.Insert>
+<div style="border:dashed thin;border-color:lightgray">    
+    <table class="table table-bordered" >
+        <thead class="thead-dark">
+            <tr class="text-center">
+                <th scope="col">Insert</th>
+                <th scope="col">Manufacturer</th>
+                <th scope="col">Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var i in Model)
+            {
+                <tr class="text-center">
+                    <td align="center" valign="middle"><img class="image" src="/images/@(i.Image).png" alt="@i.Game" style="max-height:128px;max-width:128px;"></td>
+                    <td valign="middle">@i.Store</td>
+                    <td valign="middle"><a href="@i.LinkToBuy">Buy it</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OrganizeYourGames.Models;
-using OrganizeYourGames.ViewModels;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace OrganizeYourGames.ViewComponents
 {
@@ -21,16 +17,8 @@ namespace OrganizeYourGames.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            var latestInsertsInHomePage = data.Inserts.Select(g => new HomePageItem
-            {
-                ItemType = HomePageItemType.Insert,
-                Image = g.Image,
-                Description = string.Format("Organizer for {0} from {1}", g.Game, g.Store),
-                ExternalLink = g.LinkToBuy,
-                ExternalLinkText = "Buy it",
-                Title = g.Game
-            }).ToList();            
-
+            //TODO Order by added_date
+            var latestInsertsInHomePage = data.Inserts.Take(5).ToList();
             return View(latestInsertsInHomePage);
         }
     }
