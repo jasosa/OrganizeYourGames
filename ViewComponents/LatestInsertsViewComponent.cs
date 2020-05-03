@@ -23,6 +23,7 @@ namespace OrganizeYourGames.ViewComponents
         {
             var latestInsertsInHomePage = data.Inserts.Select(g => new HomePageItem
             {
+                ItemType = HomePageItemType.Insert,
                 Image = g.Image,
                 Description = string.Format("Organizer for {0} from {1}", g.Game, g.Store),
                 ExternalLink = g.LinkToBuy,

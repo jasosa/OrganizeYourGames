@@ -28,8 +28,6 @@ namespace OrganizeYourGames
 
             services.AddTransient<GamesDataContext>();
 
-            services.AddTransient<InsertsDataContext>();
-
             services.AddTransient<FeatureToggles>(x => new FeatureToggles
             {
                 DeveloperExceptions = configuration.GetValue<bool>("FeatureToggles:DeveloperExceptions")

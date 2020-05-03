@@ -6,9 +6,19 @@
             <div class="hovercontainer">
                 <img class="image" src="/images/@(v.Image).png" alt="@v.Title" style="width:100%">
                 <div class="middle">
-                    <a href="@Url.Action("Inserts", "Games", new { name = v.Title })">
-                        <div class="text">Show</div>
-                    </a>
+                    @if (v.ItemType == OrganizeYourGames.Models.HomePageItemType.Game)
+                    {
+                        <a href="@Url.Action("Inserts", "Games", new { name = v.Title })">
+                            <div class="text">Show</div>
+                        </a>
+
+                    }
+                    else
+                    {
+                        <a href="#">
+                            <div class="text">Show</div>
+                        </a>
+                    }
                 </div>
 
             </div>
@@ -17,7 +27,7 @@
                 <p class="card-text">@v.Description</p>
                 @if (!String.IsNullOrEmpty(v.ExternalLink))
                 {
-                        <a class="card-link" href="@v.ExternalLink">@v.ExternalLinkText</a>
+                    <a class="card-link" href="@v.ExternalLink">@v.ExternalLinkText</a>
                 }
             </div>
         </div>

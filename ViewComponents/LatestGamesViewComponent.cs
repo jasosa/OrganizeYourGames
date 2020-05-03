@@ -25,6 +25,7 @@ namespace OrganizeYourGames.ViewComponents
         {
             var latestGamesInHomePage = data.Games.Select(g => new HomePageItem
             {
+                ItemType = HomePageItemType.Game,
                 Image = g.ImagePath,
                 Description = string.Format("Inserts/Organizers: {0}", g.NumberOfOrganizers),
                 Title = g.Name

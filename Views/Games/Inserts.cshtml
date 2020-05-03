@@ -1,15 +1,37 @@
-﻿@*
+﻿@addTagHelper *, OrganizeYourGames
+@model OrganizeYourGames.Models.Game
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
 
 <div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <figure>
-                <img src="~/images/journeys.png" />
-            </figure>
+    <div class="row" style="margin-top:2rem;">
+        <div class="col-4">
+            <div class="card">
+                <div class="hovercontainer">
+                    <img class="image" src="/images/@(Model.ImagePath).png" style="width:100%;">
+                </div>
+            </div>
         </div>
+        <div class="col-8">
+            <a><h1>@Model.Name</h1></a>
+            <a>@Model.Description</a>
+            <div class="row" style="margin-top:1rem;border:none thin;">
+                <div class="col">
+                    <a><b>Publisher:</b></a><a> @Model.Publisher</a>
+                </div>
+                <div class="col">
+                    <a><b>Year:</b></a><a> @Model.PublishedIn</a>
+                </div>
+                <div class="col">
+                    <a href="@Model.BBGLink" target="_blank">BGG Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:2rem;">        
+        <vc:inserts-of-a-game game="@Model.Name"></vc:inserts-of-a-game>
     </div>
 </div>
